@@ -55,17 +55,18 @@ namespace pryGestion
                 {
                     if (txtDetalleActidad.Text != "")
                     {
-                        MessageBox.Show("Vamos a grabar...");
+                        MessageBox.Show("Vamos a Registrarte");
                     }
                     else
                     {
-                        MessageBox.Show("Te falta completar el Detalle");
+                        MessageBox.Show("Te falta completar el Detalle", "Detalle faltante", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        txtDetalleActidad.Focus();
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Selecciona una actividad..");
-                    txtDetalleActidad.Focus();
+                    MessageBox.Show("Selecciona una actividad..", "Falta seleccionar una Actividad", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    cboTipo.Focus();
 
                 }
             }

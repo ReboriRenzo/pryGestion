@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace pryGestion
 {
-    public partial class Main : Form
+    public partial class frmInicioDeSesion : Form
     {
-        public Main()
+        public frmInicioDeSesion()
         {
             InitializeComponent();
         }

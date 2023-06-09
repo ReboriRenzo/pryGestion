@@ -1,6 +1,6 @@
 ﻿namespace pryGestion
 {
-    partial class Main
+    partial class frmInicioDeSesion
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -71,7 +71,7 @@
             this.textBox2.Size = new System.Drawing.Size(155, 28);
             this.textBox2.TabIndex = 3;
             // 
-            // Main
+            // frmInicioDeSesion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -80,8 +80,8 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblContraseña);
             this.Controls.Add(this.lblIniciarSesion);
-            this.Name = "Main";
-            this.Text = "Form1";
+            this.Name = "frmInicioDeSesion";
+            this.Text = "Inicio de Sesion";
             this.ResumeLayout(false);
             this.PerformLayout();
 
