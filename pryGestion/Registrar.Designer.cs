@@ -1,6 +1,6 @@
 ﻿namespace pryGestion
 {
-    partial class Registrar
+    partial class frmRegistrar
     {
         /// <summary>
         /// Required designer variable.
@@ -29,179 +29,172 @@
         private void InitializeComponent()
         {
             this.lblFecha = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.lblTipodeActividad = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
+            this.lblTipo = new System.Windows.Forms.Label();
+            this.lblDetalle = new System.Windows.Forms.Label();
+            this.mrcReunion = new System.Windows.Forms.GroupBox();
+            this.optSi = new System.Windows.Forms.RadioButton();
+            this.optNo = new System.Windows.Forms.RadioButton();
+            this.mrcTareas = new System.Windows.Forms.GroupBox();
+            this.chkNotasReunion = new System.Windows.Forms.CheckBox();
+            this.chkDebate = new System.Windows.Forms.CheckBox();
+            this.chkInvestigacion = new System.Windows.Forms.CheckBox();
+            this.chkRepositorio = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.txtDetalleActidad = new System.Windows.Forms.TextBox();
+            this.cboTipo = new System.Windows.Forms.ComboBox();
+            this.mrcReunion.SuspendLayout();
+            this.mrcTareas.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblFecha
             // 
             this.lblFecha.AutoSize = true;
             this.lblFecha.Font = new System.Drawing.Font("Yu Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecha.Location = new System.Drawing.Point(8, 14);
+            this.lblFecha.Location = new System.Drawing.Point(11, 12);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(53, 19);
             this.lblFecha.TabIndex = 0;
             this.lblFecha.Text = "Fecha";
             this.lblFecha.Click += new System.EventHandler(this.lblFecha_Click);
             // 
-            // dateTimePicker1
+            // dtpFecha
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Yu Gothic Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(67, 12);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(302, 28);
-            this.dateTimePicker1.TabIndex = 1;
+            this.dtpFecha.Font = new System.Drawing.Font("Yu Gothic Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFecha.Location = new System.Drawing.Point(73, 12);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(302, 28);
+            this.dtpFecha.TabIndex = 1;
             // 
-            // lblTipodeActividad
+            // lblTipo
             // 
-            this.lblTipodeActividad.AutoSize = true;
-            this.lblTipodeActividad.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipodeActividad.ForeColor = System.Drawing.Color.Black;
-            this.lblTipodeActividad.Location = new System.Drawing.Point(9, 65);
-            this.lblTipodeActividad.Name = "lblTipodeActividad";
-            this.lblTipodeActividad.Size = new System.Drawing.Size(128, 20);
-            this.lblTipodeActividad.TabIndex = 2;
-            this.lblTipodeActividad.Text = "Tipo de Actividad";
+            this.lblTipo.AutoSize = true;
+            this.lblTipo.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipo.ForeColor = System.Drawing.Color.Black;
+            this.lblTipo.Location = new System.Drawing.Point(32, 51);
+            this.lblTipo.Name = "lblTipo";
+            this.lblTipo.Size = new System.Drawing.Size(39, 20);
+            this.lblTipo.TabIndex = 2;
+            this.lblTipo.Text = "Tipo";
+            this.lblTipo.Click += new System.EventHandler(this.lblTipo_Click);
             // 
-            // textBox1
+            // lblDetalle
             // 
-            this.textBox1.Font = new System.Drawing.Font("Yu Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(153, 65);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(183, 25);
-            this.textBox1.TabIndex = 3;
+            this.lblDetalle.AutoSize = true;
+            this.lblDetalle.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDetalle.Location = new System.Drawing.Point(23, 85);
+            this.lblDetalle.Name = "lblDetalle";
+            this.lblDetalle.Size = new System.Drawing.Size(57, 20);
+            this.lblDetalle.TabIndex = 4;
+            this.lblDetalle.Text = "Detalle";
+            this.lblDetalle.Click += new System.EventHandler(this.label3_Click);
             // 
-            // label3
+            // mrcReunion
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 107);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(125, 20);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Detalle Actividad";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.mrcReunion.Controls.Add(this.optSi);
+            this.mrcReunion.Controls.Add(this.optNo);
+            this.mrcReunion.Font = new System.Drawing.Font("Yu Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mrcReunion.Location = new System.Drawing.Point(12, 151);
+            this.mrcReunion.Name = "mrcReunion";
+            this.mrcReunion.Size = new System.Drawing.Size(115, 77);
+            this.mrcReunion.TabIndex = 6;
+            this.mrcReunion.TabStop = false;
+            this.mrcReunion.Text = "Reunion";
             // 
-            // groupBox1
+            // optSi
             // 
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Font = new System.Drawing.Font("Yu Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 151);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(115, 77);
-            this.groupBox1.TabIndex = 6;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Reunion";
+            this.optSi.AutoSize = true;
+            this.optSi.Font = new System.Drawing.Font("Yu Gothic Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.optSi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.optSi.Location = new System.Drawing.Point(15, 36);
+            this.optSi.Name = "optSi";
+            this.optSi.Size = new System.Drawing.Size(37, 21);
+            this.optSi.TabIndex = 1;
+            this.optSi.TabStop = true;
+            this.optSi.Text = "Si";
+            this.optSi.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // optNo
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.radioButton1.Location = new System.Drawing.Point(55, 36);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(43, 21);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "No";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.optNo.AutoSize = true;
+            this.optNo.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.optNo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.optNo.Location = new System.Drawing.Point(55, 36);
+            this.optNo.Name = "optNo";
+            this.optNo.Size = new System.Drawing.Size(43, 21);
+            this.optNo.TabIndex = 0;
+            this.optNo.TabStop = true;
+            this.optNo.Text = "No";
+            this.optNo.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // mrcTareas
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Yu Gothic Light", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.radioButton2.Location = new System.Drawing.Point(15, 36);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(37, 21);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Si";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.mrcTareas.Controls.Add(this.chkNotasReunion);
+            this.mrcTareas.Controls.Add(this.chkDebate);
+            this.mrcTareas.Controls.Add(this.chkInvestigacion);
+            this.mrcTareas.Controls.Add(this.chkRepositorio);
+            this.mrcTareas.Font = new System.Drawing.Font("Yu Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mrcTareas.Location = new System.Drawing.Point(15, 244);
+            this.mrcTareas.Name = "mrcTareas";
+            this.mrcTareas.Size = new System.Drawing.Size(238, 97);
+            this.mrcTareas.TabIndex = 7;
+            this.mrcTareas.TabStop = false;
+            this.mrcTareas.Text = "Tareas";
+            this.mrcTareas.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
-            // groupBox2
+            // chkNotasReunion
             // 
-            this.groupBox2.Controls.Add(this.checkBox4);
-            this.groupBox2.Controls.Add(this.checkBox3);
-            this.groupBox2.Controls.Add(this.checkBox2);
-            this.groupBox2.Controls.Add(this.checkBox1);
-            this.groupBox2.Font = new System.Drawing.Font("Yu Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(15, 244);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(238, 97);
-            this.groupBox2.TabIndex = 7;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Tareas";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            this.chkNotasReunion.AutoSize = true;
+            this.chkNotasReunion.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkNotasReunion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.chkNotasReunion.Location = new System.Drawing.Point(11, 63);
+            this.chkNotasReunion.Name = "chkNotasReunion";
+            this.chkNotasReunion.Size = new System.Drawing.Size(113, 21);
+            this.chkNotasReunion.TabIndex = 3;
+            this.chkNotasReunion.Text = "Notas reunion";
+            this.chkNotasReunion.UseVisualStyleBackColor = true;
             // 
-            // checkBox1
+            // chkDebate
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.checkBox1.Location = new System.Drawing.Point(12, 35);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(95, 21);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Repositorio";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chkDebate.AutoSize = true;
+            this.chkDebate.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkDebate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.chkDebate.Location = new System.Drawing.Point(126, 62);
+            this.chkDebate.Name = "chkDebate";
+            this.chkDebate.Size = new System.Drawing.Size(71, 21);
+            this.chkDebate.TabIndex = 2;
+            this.chkDebate.Text = "Debate";
+            this.chkDebate.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // chkInvestigacion
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.checkBox2.Location = new System.Drawing.Point(126, 35);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(106, 21);
-            this.checkBox2.TabIndex = 1;
-            this.checkBox2.Text = "Investigacion";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.chkInvestigacion.AutoSize = true;
+            this.chkInvestigacion.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkInvestigacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.chkInvestigacion.Location = new System.Drawing.Point(126, 35);
+            this.chkInvestigacion.Name = "chkInvestigacion";
+            this.chkInvestigacion.Size = new System.Drawing.Size(106, 21);
+            this.chkInvestigacion.TabIndex = 1;
+            this.chkInvestigacion.Text = "Investigacion";
+            this.chkInvestigacion.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // chkRepositorio
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.checkBox3.Location = new System.Drawing.Point(126, 62);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(71, 21);
-            this.checkBox3.TabIndex = 2;
-            this.checkBox3.Text = "Debate";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.checkBox4.Location = new System.Drawing.Point(11, 63);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(113, 21);
-            this.checkBox4.TabIndex = 3;
-            this.checkBox4.Text = "Notas reunion";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.chkRepositorio.AutoSize = true;
+            this.chkRepositorio.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkRepositorio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.chkRepositorio.Location = new System.Drawing.Point(12, 35);
+            this.chkRepositorio.Name = "chkRepositorio";
+            this.chkRepositorio.Size = new System.Drawing.Size(95, 21);
+            this.chkRepositorio.TabIndex = 0;
+            this.chkRepositorio.Text = "Repositorio";
+            this.chkRepositorio.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Yu Gothic Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(147, 351);
+            this.button1.Location = new System.Drawing.Point(39, 347);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(88, 31);
             this.button1.TabIndex = 4;
@@ -212,43 +205,61 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Yu Gothic Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(39, 351);
+            this.button2.Location = new System.Drawing.Point(141, 347);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(88, 31);
             this.button2.TabIndex = 8;
             this.button2.Text = "Registrar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // textBox2
+            // txtDetalleActidad
             // 
-            this.textBox2.Font = new System.Drawing.Font("Yu Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(153, 107);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(183, 25);
-            this.textBox2.TabIndex = 9;
+            this.txtDetalleActidad.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDetalleActidad.Location = new System.Drawing.Point(99, 82);
+            this.txtDetalleActidad.Multiline = true;
+            this.txtDetalleActidad.Name = "txtDetalleActidad";
+            this.txtDetalleActidad.Size = new System.Drawing.Size(183, 58);
+            this.txtDetalleActidad.TabIndex = 9;
             // 
-            // Registrar
+            // cboTipo
+            // 
+            this.cboTipo.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboTipo.FormattingEnabled = true;
+            this.cboTipo.Items.AddRange(new object[] {
+            "Tarea 1",
+            "Tarea 2",
+            "Tarea 3",
+            "Tarea 4",
+            "Tarea 5"});
+            this.cboTipo.Location = new System.Drawing.Point(99, 46);
+            this.cboTipo.Name = "cboTipo";
+            this.cboTipo.Size = new System.Drawing.Size(183, 25);
+            this.cboTipo.TabIndex = 10;
+            // 
+            // frmRegistrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(387, 450);
-            this.Controls.Add(this.textBox2);
+            this.ClientSize = new System.Drawing.Size(387, 400);
+            this.Controls.Add(this.cboTipo);
+            this.Controls.Add(this.txtDetalleActidad);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.lblTipodeActividad);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.mrcTareas);
+            this.Controls.Add(this.mrcReunion);
+            this.Controls.Add(this.lblDetalle);
+            this.Controls.Add(this.lblTipo);
+            this.Controls.Add(this.dtpFecha);
             this.Controls.Add(this.lblFecha);
-            this.Name = "Registrar";
-            this.Text = "Form1";
+            this.Name = "frmRegistrar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Registrate";
             this.Load += new System.EventHandler(this.Registrar_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.mrcReunion.ResumeLayout(false);
+            this.mrcReunion.PerformLayout();
+            this.mrcTareas.ResumeLayout(false);
+            this.mrcTareas.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -257,20 +268,20 @@
         #endregion
 
         private System.Windows.Forms.Label lblFecha;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label lblTipodeActividad;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.DateTimePicker dtpFecha;
+        private System.Windows.Forms.Label lblTipo;
+        private System.Windows.Forms.Label lblDetalle;
+        private System.Windows.Forms.GroupBox mrcReunion;
+        private System.Windows.Forms.RadioButton optSi;
+        private System.Windows.Forms.RadioButton optNo;
+        private System.Windows.Forms.GroupBox mrcTareas;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox chkNotasReunion;
+        private System.Windows.Forms.CheckBox chkDebate;
+        private System.Windows.Forms.CheckBox chkInvestigacion;
+        private System.Windows.Forms.CheckBox chkRepositorio;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtDetalleActidad;
+        private System.Windows.Forms.ComboBox cboTipo;
     }
 }

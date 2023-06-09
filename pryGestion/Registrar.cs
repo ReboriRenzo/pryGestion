@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace pryGestion
 {
-    public partial class Registrar : Form
+    public partial class frmRegistrar : Form
     {
-        public Registrar()
+        public frmRegistrar()
         {
             InitializeComponent();
         }
@@ -41,5 +41,40 @@ namespace pryGestion
         {
 
         }
+
+        private void lblTipo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (dtpFecha.Value >= DateTime.Today)
+            {
+                if(cboTipo.SelectedIndex != -1)
+                {
+                    if (txtDetalleActidad.Text != "")
+                    {
+                        MessageBox.Show("Vamos a grabar...");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Te falta completar el Detalle");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Selecciona una actividad..");
+                    txtDetalleActidad.Focus();
+
+                }
+            }
+            else
+            { MessageBox.Show("Seleccione una fecha actual o posterior a la de hoy", "Carga de Tarea", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                dtpFecha.Value = DateTime.Today;
+                dtpFecha.Focus();
+            }
+        }
     }
 }
+ 
