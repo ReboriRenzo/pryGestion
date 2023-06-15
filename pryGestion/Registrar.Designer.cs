@@ -44,6 +44,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.txtDetalleActidad = new System.Windows.Forms.TextBox();
             this.cboTipo = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.mrcReunion.SuspendLayout();
             this.mrcTareas.SuspendLayout();
             this.SuspendLayout();
@@ -52,7 +53,7 @@
             // 
             this.lblFecha.AutoSize = true;
             this.lblFecha.Font = new System.Drawing.Font("Yu Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecha.Location = new System.Drawing.Point(11, 12);
+            this.lblFecha.Location = new System.Drawing.Point(6, 63);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(53, 19);
             this.lblFecha.TabIndex = 0;
@@ -62,7 +63,7 @@
             // dtpFecha
             // 
             this.dtpFecha.Font = new System.Drawing.Font("Yu Gothic Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFecha.Location = new System.Drawing.Point(73, 12);
+            this.dtpFecha.Location = new System.Drawing.Point(68, 63);
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(302, 28);
             this.dtpFecha.TabIndex = 1;
@@ -72,7 +73,7 @@
             this.lblTipo.AutoSize = true;
             this.lblTipo.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTipo.ForeColor = System.Drawing.Color.Black;
-            this.lblTipo.Location = new System.Drawing.Point(32, 51);
+            this.lblTipo.Location = new System.Drawing.Point(27, 102);
             this.lblTipo.Name = "lblTipo";
             this.lblTipo.Size = new System.Drawing.Size(39, 20);
             this.lblTipo.TabIndex = 2;
@@ -83,7 +84,7 @@
             // 
             this.lblDetalle.AutoSize = true;
             this.lblDetalle.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDetalle.Location = new System.Drawing.Point(23, 85);
+            this.lblDetalle.Location = new System.Drawing.Point(18, 136);
             this.lblDetalle.Name = "lblDetalle";
             this.lblDetalle.Size = new System.Drawing.Size(57, 20);
             this.lblDetalle.TabIndex = 4;
@@ -95,7 +96,7 @@
             this.mrcReunion.Controls.Add(this.optSi);
             this.mrcReunion.Controls.Add(this.optNo);
             this.mrcReunion.Font = new System.Drawing.Font("Yu Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mrcReunion.Location = new System.Drawing.Point(12, 151);
+            this.mrcReunion.Location = new System.Drawing.Point(7, 202);
             this.mrcReunion.Name = "mrcReunion";
             this.mrcReunion.Size = new System.Drawing.Size(115, 77);
             this.mrcReunion.TabIndex = 6;
@@ -135,7 +136,7 @@
             this.mrcTareas.Controls.Add(this.chkInvestigacion);
             this.mrcTareas.Controls.Add(this.chkRepositorio);
             this.mrcTareas.Font = new System.Drawing.Font("Yu Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mrcTareas.Location = new System.Drawing.Point(15, 244);
+            this.mrcTareas.Location = new System.Drawing.Point(10, 295);
             this.mrcTareas.Name = "mrcTareas";
             this.mrcTareas.Size = new System.Drawing.Size(238, 97);
             this.mrcTareas.TabIndex = 7;
@@ -194,7 +195,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Yu Gothic Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(39, 347);
+            this.button1.Location = new System.Drawing.Point(34, 398);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(88, 31);
             this.button1.TabIndex = 4;
@@ -205,7 +206,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Yu Gothic Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(141, 347);
+            this.button2.Location = new System.Drawing.Point(136, 398);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(88, 31);
             this.button2.TabIndex = 8;
@@ -216,7 +217,7 @@
             // txtDetalleActidad
             // 
             this.txtDetalleActidad.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDetalleActidad.Location = new System.Drawing.Point(99, 82);
+            this.txtDetalleActidad.Location = new System.Drawing.Point(94, 133);
             this.txtDetalleActidad.Multiline = true;
             this.txtDetalleActidad.Name = "txtDetalleActidad";
             this.txtDetalleActidad.Size = new System.Drawing.Size(183, 58);
@@ -232,16 +233,27 @@
             "Tarea 3",
             "Tarea 4",
             "Tarea 5"});
-            this.cboTipo.Location = new System.Drawing.Point(99, 46);
+            this.cboTipo.Location = new System.Drawing.Point(94, 97);
             this.cboTipo.Name = "cboTipo";
             this.cboTipo.Size = new System.Drawing.Size(183, 25);
             this.cboTipo.TabIndex = 10;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Yu Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(55, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(309, 38);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Registra tu Actividad";
             // 
             // frmRegistrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(387, 400);
+            this.ClientSize = new System.Drawing.Size(437, 436);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.cboTipo);
             this.Controls.Add(this.txtDetalleActidad);
             this.Controls.Add(this.button2);
@@ -283,5 +295,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox txtDetalleActidad;
         private System.Windows.Forms.ComboBox cboTipo;
+        private System.Windows.Forms.Label label1;
     }
 }
