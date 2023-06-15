@@ -1,4 +1,6 @@
-﻿namespace pryGestion
+﻿using System;
+
+namespace pryGestion
 {
     partial class frmInicioDeSesion
     {
@@ -30,8 +32,9 @@
         {
             this.lblIniciarSesion = new System.Windows.Forms.Label();
             this.lblContraseña = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtIniciarSesion = new System.Windows.Forms.TextBox();
+            this.txtContraseña = new System.Windows.Forms.TextBox();
+            this.cmdIngresar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblIniciarSesion
@@ -55,44 +58,69 @@
             this.lblContraseña.Text = "Contraseña";
             this.lblContraseña.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBox1
+            // txtIniciarSesion
             // 
-            this.textBox1.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(170, 39);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(156, 28);
-            this.textBox1.TabIndex = 2;
+            this.txtIniciarSesion.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIniciarSesion.Location = new System.Drawing.Point(170, 39);
+            this.txtIniciarSesion.Name = "txtIniciarSesion";
+            this.txtIniciarSesion.Size = new System.Drawing.Size(156, 28);
+            this.txtIniciarSesion.TabIndex = 2;
             // 
-            // textBox2
+            // txtContraseña
             // 
-            this.textBox2.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(171, 82);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(155, 28);
-            this.textBox2.TabIndex = 3;
+            this.txtContraseña.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContraseña.Location = new System.Drawing.Point(171, 82);
+            this.txtContraseña.Name = "txtContraseña";
+            this.txtContraseña.PasswordChar = '#';
+            this.txtContraseña.Size = new System.Drawing.Size(155, 28);
+            this.txtContraseña.TabIndex = 3;
+            // 
+            // cmdIngresar
+            // 
+            this.cmdIngresar.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdIngresar.Location = new System.Drawing.Point(212, 125);
+            this.cmdIngresar.Name = "cmdIngresar";
+            this.cmdIngresar.Size = new System.Drawing.Size(104, 30);
+            this.cmdIngresar.TabIndex = 4;
+            this.cmdIngresar.Text = "Ingresar";
+            this.cmdIngresar.UseVisualStyleBackColor = true;
+            this.cmdIngresar.Click += new System.EventHandler(this.cmdIngresar_Click);
             // 
             // frmInicioDeSesion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(411, 151);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(349, 167);
+            this.Controls.Add(this.cmdIngresar);
+            this.Controls.Add(this.txtContraseña);
+            this.Controls.Add(this.txtIniciarSesion);
             this.Controls.Add(this.lblContraseña);
             this.Controls.Add(this.lblIniciarSesion);
             this.Name = "frmInicioDeSesion";
             this.Text = "Inicio de Sesion";
+            this.Load += new System.EventHandler(this.frmInicioDeSesion_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void frmInicioDeSesion_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion
 
         private System.Windows.Forms.Label lblIniciarSesion;
         private System.Windows.Forms.Label lblContraseña;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtIniciarSesion;
+        private System.Windows.Forms.TextBox txtContraseña;
+        private System.Windows.Forms.Button cmdIngresar;
     }
 }
 

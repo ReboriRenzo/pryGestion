@@ -35,16 +35,16 @@
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(12, 91);
+            this.listBox1.Location = new System.Drawing.Point(12, 54);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(268, 160);
+            this.listBox1.Size = new System.Drawing.Size(210, 160);
             this.listBox1.TabIndex = 0;
             // 
             // lblActividad
             // 
             this.lblActividad.AutoSize = true;
             this.lblActividad.Font = new System.Drawing.Font("Yu Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblActividad.Location = new System.Drawing.Point(22, 41);
+            this.lblActividad.Location = new System.Drawing.Point(12, 20);
             this.lblActividad.Name = "lblActividad";
             this.lblActividad.Size = new System.Drawing.Size(68, 17);
             this.lblActividad.TabIndex = 1;
@@ -54,7 +54,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(477, 450);
+            this.ClientSize = new System.Drawing.Size(298, 262);
             this.Controls.Add(this.lblActividad);
             this.Controls.Add(this.listBox1);
             this.Name = "frmMostrar";

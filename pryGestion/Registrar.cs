@@ -55,7 +55,7 @@ namespace pryGestion
                 {
                     if (txtDetalleActidad.Text != "")
                     {
-                        MessageBox.Show("Vamos a Registrarte");
+                        MessageBox.Show("Haz sido registrado exitosamente");
                     }
                     else
                     {
