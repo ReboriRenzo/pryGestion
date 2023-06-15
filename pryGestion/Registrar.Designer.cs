@@ -1,4 +1,6 @@
-﻿namespace pryGestion
+﻿using System;
+
+namespace pryGestion
 {
     partial class frmRegistrar
     {
@@ -45,6 +47,11 @@
             this.txtDetalleActidad = new System.Windows.Forms.TextBox();
             this.cboTipo = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.Lista = new System.Windows.Forms.ListBox();
+            this.cmdCargarVector = new System.Windows.Forms.Button();
+            this.cmdVerVector = new System.Windows.Forms.Button();
+            this.cmdVerVector2 = new System.Windows.Forms.Button();
+            this.cmdVector3 = new System.Windows.Forms.Button();
             this.mrcReunion.SuspendLayout();
             this.mrcTareas.SuspendLayout();
             this.SuspendLayout();
@@ -248,11 +255,66 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Registra tu Actividad";
             // 
+            // Lista
+            // 
+            this.Lista.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.Lista.FormattingEnabled = true;
+            this.Lista.Location = new System.Drawing.Point(272, 252);
+            this.Lista.Name = "Lista";
+            this.Lista.Size = new System.Drawing.Size(210, 160);
+            this.Lista.TabIndex = 12;
+            this.Lista.SelectedIndexChanged += new System.EventHandler(this.Lista_SelectedIndexChanged);
+            // 
+            // cmdCargarVector
+            // 
+            this.cmdCargarVector.Location = new System.Drawing.Point(383, 63);
+            this.cmdCargarVector.Name = "cmdCargarVector";
+            this.cmdCargarVector.Size = new System.Drawing.Size(118, 35);
+            this.cmdCargarVector.TabIndex = 13;
+            this.cmdCargarVector.Text = "Cargar Vector";
+            this.cmdCargarVector.UseVisualStyleBackColor = true;
+            this.cmdCargarVector.Click += new System.EventHandler(this.cmdCargarVector_Click);
+            // 
+            // cmdVerVector
+            // 
+            this.cmdVerVector.Location = new System.Drawing.Point(383, 104);
+            this.cmdVerVector.Name = "cmdVerVector";
+            this.cmdVerVector.Size = new System.Drawing.Size(118, 35);
+            this.cmdVerVector.TabIndex = 14;
+            this.cmdVerVector.Text = "Ver Vector";
+            this.cmdVerVector.UseVisualStyleBackColor = true;
+            this.cmdVerVector.Click += new System.EventHandler(this.cmdVerVector_Click);
+            // 
+            // cmdVerVector2
+            // 
+            this.cmdVerVector2.Location = new System.Drawing.Point(383, 145);
+            this.cmdVerVector2.Name = "cmdVerVector2";
+            this.cmdVerVector2.Size = new System.Drawing.Size(118, 35);
+            this.cmdVerVector2.TabIndex = 15;
+            this.cmdVerVector2.Text = "Ver vector Array";
+            this.cmdVerVector2.UseVisualStyleBackColor = true;
+            this.cmdVerVector2.Click += new System.EventHandler(this.cmdVerVector2_Click);
+            // 
+            // cmdVector3
+            // 
+            this.cmdVector3.Location = new System.Drawing.Point(383, 186);
+            this.cmdVector3.Name = "cmdVector3";
+            this.cmdVector3.Size = new System.Drawing.Size(118, 35);
+            this.cmdVector3.TabIndex = 16;
+            this.cmdVector3.Text = "Ver Vector for";
+            this.cmdVector3.UseVisualStyleBackColor = true;
+            this.cmdVector3.Click += new System.EventHandler(this.cmdVector3_Click);
+            // 
             // frmRegistrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(437, 436);
+            this.ClientSize = new System.Drawing.Size(531, 436);
+            this.Controls.Add(this.cmdVector3);
+            this.Controls.Add(this.cmdVerVector2);
+            this.Controls.Add(this.cmdVerVector);
+            this.Controls.Add(this.cmdCargarVector);
+            this.Controls.Add(this.Lista);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cboTipo);
             this.Controls.Add(this.txtDetalleActidad);
@@ -277,6 +339,11 @@
 
         }
 
+        private void Lista_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
         #endregion
 
         private System.Windows.Forms.Label lblFecha;
@@ -296,5 +363,10 @@
         private System.Windows.Forms.TextBox txtDetalleActidad;
         private System.Windows.Forms.ComboBox cboTipo;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ListBox Lista;
+        private System.Windows.Forms.Button cmdCargarVector;
+        private System.Windows.Forms.Button cmdVerVector;
+        private System.Windows.Forms.Button cmdVerVector2;
+        private System.Windows.Forms.Button cmdVector3;
     }
 }
