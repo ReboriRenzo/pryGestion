@@ -12,15 +12,18 @@ namespace pryGestion
 {
     public partial class frmRegistrar : Form
     {
+        //Zona de declaracion global
+        string datoConcatenar;
+        string[] vectorActividad = new string[5];
+        string[] vectorRegistroActividad = new string[4];
+        int indiceRegistro = 0;
+        frmMostrar ventanaMostrar =new frmMostrar();
+        int indiceFilaRegistro;
         public frmRegistrar()
         {
             InitializeComponent();
         }
 
-        //Zona de declaracion global
-        string[] vectorActividad = new string[10];
-        string[] vectorRegistroActividad = new string[4];
-        int indiceRegistro = 0;
         private void label3_Click(object sender, EventArgs e)
         {
 
@@ -53,13 +56,18 @@ namespace pryGestion
 
         private void button2_Click(object sender, EventArgs e)
         {
+           
             if (dtpFecha.Value >= DateTime.Today)
             {
                 if(cboTipo.SelectedIndex != -1)
                 {
                     if (txtDetalleActidad.Text != "")
                     {
-                        MessageBox.Show("Haz sido registrado exitosamente");
+                        MessageBox.Show("Haz sido registrado exitosamente", "Registro exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        ventanaMostrar.matrizTareas[indiceFilaRegistro, 0] = dtpFecha.Value.ToString();
+                        ventanaMostrar.matrizTareas[indiceFilaRegistro, 1] = cboTipo.Text;
+                        ventanaMostrar.matrizTareas[indiceFilaRegistro, 2] = txtDetalleActidad.Text;
                     }
                     else
                     {
@@ -85,7 +93,7 @@ namespace pryGestion
         {
             int indice = 0;
 
-            while (indice <= 9)
+            while (indice <= 5)
             {
                 Lista.Items.Add(vectorActividad[indice]);
 
@@ -97,7 +105,7 @@ namespace pryGestion
         {
             int indice = 0;
 
-            while (indice <= 9) 
+            while (indice <= 5) 
             {
                 vectorActividad[indice] = "" + indice;
 
@@ -123,6 +131,18 @@ namespace pryGestion
             {
                 Lista.Items.Add(vectorActividad[indice]);
             }
+        }
+
+        private void cboTipo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmdMostrar_Click(object sender, EventArgs e)
+        {
+            frmMostrar frmMostrar = new frmMostrar();
+            frmMostrar.ShowDialog();
+            this.Hide();
         }
     }
 }

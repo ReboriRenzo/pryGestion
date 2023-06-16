@@ -54,7 +54,7 @@ namespace pryGestion
             this.lblContraseña.Location = new System.Drawing.Point(40, 84);
             this.lblContraseña.Name = "lblContraseña";
             this.lblContraseña.Size = new System.Drawing.Size(95, 21);
-            this.lblContraseña.TabIndex = 1;
+            this.lblContraseña.TabIndex = 4;
             this.lblContraseña.Text = "Contraseña";
             this.lblContraseña.Click += new System.EventHandler(this.label1_Click);
             // 
@@ -64,7 +64,8 @@ namespace pryGestion
             this.txtIniciarSesion.Location = new System.Drawing.Point(170, 39);
             this.txtIniciarSesion.Name = "txtIniciarSesion";
             this.txtIniciarSesion.Size = new System.Drawing.Size(156, 28);
-            this.txtIniciarSesion.TabIndex = 2;
+            this.txtIniciarSesion.TabIndex = 0;
+            this.txtIniciarSesion.TextChanged += new System.EventHandler(this.txtIniciarSesion_TextChanged);
             // 
             // txtContraseña
             // 
@@ -73,7 +74,7 @@ namespace pryGestion
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.PasswordChar = '#';
             this.txtContraseña.Size = new System.Drawing.Size(155, 28);
-            this.txtContraseña.TabIndex = 3;
+            this.txtContraseña.TabIndex = 1;
             // 
             // cmdIngresar
             // 
@@ -81,7 +82,7 @@ namespace pryGestion
             this.cmdIngresar.Location = new System.Drawing.Point(212, 125);
             this.cmdIngresar.Name = "cmdIngresar";
             this.cmdIngresar.Size = new System.Drawing.Size(104, 30);
-            this.cmdIngresar.TabIndex = 4;
+            this.cmdIngresar.TabIndex = 2;
             this.cmdIngresar.Text = "Ingresar";
             this.cmdIngresar.UseVisualStyleBackColor = true;
             this.cmdIngresar.Click += new System.EventHandler(this.cmdIngresar_Click);

@@ -50,5 +50,10 @@ namespace pryGestion
                 
             }
         }
+
+        private void txtIniciarSesion_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -52,6 +52,7 @@ namespace pryGestion
             this.cmdVerVector = new System.Windows.Forms.Button();
             this.cmdVerVector2 = new System.Windows.Forms.Button();
             this.cmdVector3 = new System.Windows.Forms.Button();
+            this.cmdMostrar = new System.Windows.Forms.Button();
             this.mrcReunion.SuspendLayout();
             this.mrcTareas.SuspendLayout();
             this.SuspendLayout();
@@ -59,8 +60,9 @@ namespace pryGestion
             // lblFecha
             // 
             this.lblFecha.AutoSize = true;
+            this.lblFecha.BackColor = System.Drawing.Color.Transparent;
             this.lblFecha.Font = new System.Drawing.Font("Yu Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecha.Location = new System.Drawing.Point(6, 63);
+            this.lblFecha.Location = new System.Drawing.Point(5, 63);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(53, 19);
             this.lblFecha.TabIndex = 0;
@@ -70,17 +72,18 @@ namespace pryGestion
             // dtpFecha
             // 
             this.dtpFecha.Font = new System.Drawing.Font("Yu Gothic Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFecha.Location = new System.Drawing.Point(68, 63);
+            this.dtpFecha.Location = new System.Drawing.Point(64, 63);
             this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(302, 28);
+            this.dtpFecha.Size = new System.Drawing.Size(300, 28);
             this.dtpFecha.TabIndex = 1;
             // 
             // lblTipo
             // 
             this.lblTipo.AutoSize = true;
+            this.lblTipo.BackColor = System.Drawing.Color.Transparent;
             this.lblTipo.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTipo.ForeColor = System.Drawing.Color.Black;
-            this.lblTipo.Location = new System.Drawing.Point(27, 102);
+            this.lblTipo.Location = new System.Drawing.Point(12, 102);
             this.lblTipo.Name = "lblTipo";
             this.lblTipo.Size = new System.Drawing.Size(39, 20);
             this.lblTipo.TabIndex = 2;
@@ -90,8 +93,9 @@ namespace pryGestion
             // lblDetalle
             // 
             this.lblDetalle.AutoSize = true;
+            this.lblDetalle.BackColor = System.Drawing.Color.Transparent;
             this.lblDetalle.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDetalle.Location = new System.Drawing.Point(18, 136);
+            this.lblDetalle.Location = new System.Drawing.Point(3, 136);
             this.lblDetalle.Name = "lblDetalle";
             this.lblDetalle.Size = new System.Drawing.Size(57, 20);
             this.lblDetalle.TabIndex = 4;
@@ -224,10 +228,10 @@ namespace pryGestion
             // txtDetalleActidad
             // 
             this.txtDetalleActidad.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDetalleActidad.Location = new System.Drawing.Point(94, 133);
+            this.txtDetalleActidad.Location = new System.Drawing.Point(66, 133);
             this.txtDetalleActidad.Multiline = true;
             this.txtDetalleActidad.Name = "txtDetalleActidad";
-            this.txtDetalleActidad.Size = new System.Drawing.Size(183, 58);
+            this.txtDetalleActidad.Size = new System.Drawing.Size(298, 58);
             this.txtDetalleActidad.TabIndex = 9;
             // 
             // cboTipo
@@ -240,10 +244,11 @@ namespace pryGestion
             "Tarea 3",
             "Tarea 4",
             "Tarea 5"});
-            this.cboTipo.Location = new System.Drawing.Point(94, 97);
+            this.cboTipo.Location = new System.Drawing.Point(64, 97);
             this.cboTipo.Name = "cboTipo";
-            this.cboTipo.Size = new System.Drawing.Size(183, 25);
+            this.cboTipo.Size = new System.Drawing.Size(300, 25);
             this.cboTipo.TabIndex = 10;
+            this.cboTipo.SelectedIndexChanged += new System.EventHandler(this.cboTipo_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -259,7 +264,7 @@ namespace pryGestion
             // 
             this.Lista.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.Lista.FormattingEnabled = true;
-            this.Lista.Location = new System.Drawing.Point(272, 252);
+            this.Lista.Location = new System.Drawing.Point(291, 227);
             this.Lista.Name = "Lista";
             this.Lista.Size = new System.Drawing.Size(210, 160);
             this.Lista.TabIndex = 12;
@@ -305,11 +310,23 @@ namespace pryGestion
             this.cmdVector3.UseVisualStyleBackColor = true;
             this.cmdVector3.Click += new System.EventHandler(this.cmdVector3_Click);
             // 
+            // cmdMostrar
+            // 
+            this.cmdMostrar.Font = new System.Drawing.Font("Yu Gothic Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdMostrar.Location = new System.Drawing.Point(230, 398);
+            this.cmdMostrar.Name = "cmdMostrar";
+            this.cmdMostrar.Size = new System.Drawing.Size(88, 31);
+            this.cmdMostrar.TabIndex = 17;
+            this.cmdMostrar.Text = "Mostrar";
+            this.cmdMostrar.UseVisualStyleBackColor = true;
+            this.cmdMostrar.Click += new System.EventHandler(this.cmdMostrar_Click);
+            // 
             // frmRegistrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(531, 436);
+            this.Controls.Add(this.cmdMostrar);
             this.Controls.Add(this.cmdVector3);
             this.Controls.Add(this.cmdVerVector2);
             this.Controls.Add(this.cmdVerVector);
@@ -368,5 +385,6 @@ namespace pryGestion
         private System.Windows.Forms.Button cmdVerVector;
         private System.Windows.Forms.Button cmdVerVector2;
         private System.Windows.Forms.Button cmdVector3;
+        private System.Windows.Forms.Button cmdMostrar;
     }
 }
