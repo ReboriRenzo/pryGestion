@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMostrar));
             this.lblActividad = new System.Windows.Forms.Label();
             this.dgvGrillaActividades = new System.Windows.Forms.DataGridView();
             this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,14 +45,15 @@
             this.lblActividad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblActividad.Font = new System.Drawing.Font("Yu Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblActividad.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lblActividad.Location = new System.Drawing.Point(176, 9);
+            this.lblActividad.Location = new System.Drawing.Point(229, 9);
             this.lblActividad.Name = "lblActividad";
-            this.lblActividad.Size = new System.Drawing.Size(228, 27);
+            this.lblActividad.Size = new System.Drawing.Size(117, 27);
             this.lblActividad.TabIndex = 1;
-            this.lblActividad.Text = "Registro de Actividades";
+            this.lblActividad.Text = "Tu Registro";
             // 
             // dgvGrillaActividades
             // 
+            this.dgvGrillaActividades.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dgvGrillaActividades.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGrillaActividades.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Fecha,
@@ -59,6 +61,7 @@
             this.Detalles,
             this.Reunion,
             this.Tarea});
+            this.dgvGrillaActividades.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dgvGrillaActividades.Location = new System.Drawing.Point(12, 39);
             this.dgvGrillaActividades.Name = "dgvGrillaActividades";
             this.dgvGrillaActividades.Size = new System.Drawing.Size(546, 238);
@@ -97,6 +100,7 @@
             this.ClientSize = new System.Drawing.Size(570, 316);
             this.Controls.Add(this.dgvGrillaActividades);
             this.Controls.Add(this.lblActividad);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMostrar";
             this.Text = "Mostrar";
             this.Load += new System.EventHandler(this.frmMostrar_Load);
