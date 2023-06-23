@@ -13,11 +13,11 @@ namespace pryGestion
     public partial class frmRegistrar : Form
     {
         //Zona de declaracion global
-        string datoConcatenar;
+        
         string[] vectorActividad = new string[5];
         string[] vectorRegistroActividad = new string[4];
-        int indiceRegistro = 0;
-        frmMostrar ventanaMostrar =new frmMostrar();
+        readonly int indiceRegistro = 0;
+        frmMostrar ventanaMostrar = new frmMostrar();
         int indiceFilaRegistro;
         public frmRegistrar()
         {
@@ -56,18 +56,57 @@ namespace pryGestion
 
         private void button2_Click(object sender, EventArgs e)
         {
-           
+            string varTareas = "";
+            string varReunion = "";
             if (dtpFecha.Value >= DateTime.Today)
             {
-                if(cboTipo.SelectedIndex != -1)
+                if (cboTipo.SelectedIndex != -1)
                 {
                     if (txtDetalleActidad.Text != "")
                     {
                         MessageBox.Show("Haz sido registrado exitosamente", "Registro exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        
+
+                        if (optSi.Checked == true)
+                        {
+                            varReunion = "Si";
+                        }
+                        else
+                        {
+                            varReunion = "No";
+                        }
+                        if (chkDebate.Checked)
+                        {
+                            varTareas = "Debate, ";
+                        }
+                        if (chkInvestigacion.Checked)
+                        {
+                            varTareas = varTareas + "Investigacion, ";
+                        }
+                        if (chkNotasReunion.Checked)
+                        {
+                            varTareas = varTareas + "Notas, ";
+                        }
+                        if (chkRepositorio.Checked)
+                        {
+                            varTareas = varTareas + "Repositorio, ";
+                        }
 
                         ventanaMostrar.matrizTareas[indiceFilaRegistro, 0] = dtpFecha.Value.ToString();
                         ventanaMostrar.matrizTareas[indiceFilaRegistro, 1] = cboTipo.Text;
                         ventanaMostrar.matrizTareas[indiceFilaRegistro, 2] = txtDetalleActidad.Text;
+                        ventanaMostrar.matrizTareas[indiceFilaRegistro, 3] = varReunion;
+                        ventanaMostrar.matrizTareas[indiceFilaRegistro, 4] = varTareas;
+
+
+
+                        indiceFilaRegistro++;
+
+                        if (indiceFilaRegistro == ventanaMostrar.matrizTareas.GetLength(0))
+                        {
+                            cmdRegistrar.Enabled = false;
+
+                        }
                     }
                     else
                     {
@@ -88,61 +127,11 @@ namespace pryGestion
                 dtpFecha.Focus();
             }
         }
-
-        private void cmdVerVector_Click(object sender, EventArgs e)
-        {
-            int indice = 0;
-
-            while (indice <= 5)
-            {
-                Lista.Items.Add(vectorActividad[indice]);
-
-                indice = indice + 1;
-            }
-        }
-
-        private void cmdCargarVector_Click(object sender, EventArgs e)
-        {
-            int indice = 0;
-
-            while (indice <= 5) 
-            {
-                vectorActividad[indice] = "" + indice;
-
-                indice = indice + 1;
-            }
-        }
-
-        private void cmdVerVector2_Click(object sender, EventArgs e)
-        {
-            int indice = 0;
-
-            while (indice < vectorActividad.Length) 
-            {
-                Lista.Items.Add(vectorActividad[indice]);
-
-                indice++;
-            }
-        }
-
-        private void cmdVector3_Click(object sender, EventArgs e)
-        {
-            for (int indice = 0; indice < vectorActividad.Length; indice++)
-            {
-                Lista.Items.Add(vectorActividad[indice]);
-            }
-        }
-
-        private void cboTipo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void cmdMostrar_Click(object sender, EventArgs e)
         {
-            frmMostrar frmMostrar = new frmMostrar();
-            frmMostrar.ShowDialog();
+            ventanaMostrar.ShowDialog();
             this.Hide();
+            
         }
     }
 }

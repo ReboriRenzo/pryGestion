@@ -43,15 +43,10 @@ namespace pryGestion
             this.chkInvestigacion = new System.Windows.Forms.CheckBox();
             this.chkRepositorio = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.cmdRegistrar = new System.Windows.Forms.Button();
             this.txtDetalleActidad = new System.Windows.Forms.TextBox();
             this.cboTipo = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.Lista = new System.Windows.Forms.ListBox();
-            this.cmdCargarVector = new System.Windows.Forms.Button();
-            this.cmdVerVector = new System.Windows.Forms.Button();
-            this.cmdVerVector2 = new System.Windows.Forms.Button();
-            this.cmdVector3 = new System.Windows.Forms.Button();
             this.cmdMostrar = new System.Windows.Forms.Button();
             this.mrcReunion.SuspendLayout();
             this.mrcTareas.SuspendLayout();
@@ -62,7 +57,7 @@ namespace pryGestion
             this.lblFecha.AutoSize = true;
             this.lblFecha.BackColor = System.Drawing.Color.Transparent;
             this.lblFecha.Font = new System.Drawing.Font("Yu Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecha.Location = new System.Drawing.Point(5, 63);
+            this.lblFecha.Location = new System.Drawing.Point(18, 73);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(53, 19);
             this.lblFecha.TabIndex = 0;
@@ -72,7 +67,7 @@ namespace pryGestion
             // dtpFecha
             // 
             this.dtpFecha.Font = new System.Drawing.Font("Yu Gothic Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFecha.Location = new System.Drawing.Point(64, 63);
+            this.dtpFecha.Location = new System.Drawing.Point(77, 73);
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(300, 28);
             this.dtpFecha.TabIndex = 1;
@@ -83,7 +78,7 @@ namespace pryGestion
             this.lblTipo.BackColor = System.Drawing.Color.Transparent;
             this.lblTipo.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTipo.ForeColor = System.Drawing.Color.Black;
-            this.lblTipo.Location = new System.Drawing.Point(12, 102);
+            this.lblTipo.Location = new System.Drawing.Point(25, 112);
             this.lblTipo.Name = "lblTipo";
             this.lblTipo.Size = new System.Drawing.Size(39, 20);
             this.lblTipo.TabIndex = 2;
@@ -95,7 +90,7 @@ namespace pryGestion
             this.lblDetalle.AutoSize = true;
             this.lblDetalle.BackColor = System.Drawing.Color.Transparent;
             this.lblDetalle.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDetalle.Location = new System.Drawing.Point(3, 136);
+            this.lblDetalle.Location = new System.Drawing.Point(16, 146);
             this.lblDetalle.Name = "lblDetalle";
             this.lblDetalle.Size = new System.Drawing.Size(57, 20);
             this.lblDetalle.TabIndex = 4;
@@ -107,7 +102,7 @@ namespace pryGestion
             this.mrcReunion.Controls.Add(this.optSi);
             this.mrcReunion.Controls.Add(this.optNo);
             this.mrcReunion.Font = new System.Drawing.Font("Yu Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mrcReunion.Location = new System.Drawing.Point(7, 202);
+            this.mrcReunion.Location = new System.Drawing.Point(20, 212);
             this.mrcReunion.Name = "mrcReunion";
             this.mrcReunion.Size = new System.Drawing.Size(115, 77);
             this.mrcReunion.TabIndex = 6;
@@ -147,7 +142,7 @@ namespace pryGestion
             this.mrcTareas.Controls.Add(this.chkInvestigacion);
             this.mrcTareas.Controls.Add(this.chkRepositorio);
             this.mrcTareas.Font = new System.Drawing.Font("Yu Gothic", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mrcTareas.Location = new System.Drawing.Point(10, 295);
+            this.mrcTareas.Location = new System.Drawing.Point(23, 305);
             this.mrcTareas.Name = "mrcTareas";
             this.mrcTareas.Size = new System.Drawing.Size(238, 97);
             this.mrcTareas.TabIndex = 7;
@@ -206,7 +201,7 @@ namespace pryGestion
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Yu Gothic Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(34, 398);
+            this.button1.Location = new System.Drawing.Point(47, 408);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(88, 31);
             this.button1.TabIndex = 4;
@@ -214,21 +209,21 @@ namespace pryGestion
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // cmdRegistrar
             // 
-            this.button2.Font = new System.Drawing.Font("Yu Gothic Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(136, 398);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(88, 31);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Registrar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.cmdRegistrar.Font = new System.Drawing.Font("Yu Gothic Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdRegistrar.Location = new System.Drawing.Point(149, 408);
+            this.cmdRegistrar.Name = "cmdRegistrar";
+            this.cmdRegistrar.Size = new System.Drawing.Size(88, 31);
+            this.cmdRegistrar.TabIndex = 8;
+            this.cmdRegistrar.Text = "Registrar";
+            this.cmdRegistrar.UseVisualStyleBackColor = true;
+            this.cmdRegistrar.Click += new System.EventHandler(this.button2_Click);
             // 
             // txtDetalleActidad
             // 
             this.txtDetalleActidad.Font = new System.Drawing.Font("Yu Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDetalleActidad.Location = new System.Drawing.Point(66, 133);
+            this.txtDetalleActidad.Location = new System.Drawing.Point(79, 143);
             this.txtDetalleActidad.Multiline = true;
             this.txtDetalleActidad.Name = "txtDetalleActidad";
             this.txtDetalleActidad.Size = new System.Drawing.Size(298, 58);
@@ -244,76 +239,25 @@ namespace pryGestion
             "Tarea 3",
             "Tarea 4",
             "Tarea 5"});
-            this.cboTipo.Location = new System.Drawing.Point(64, 97);
+            this.cboTipo.Location = new System.Drawing.Point(77, 107);
             this.cboTipo.Name = "cboTipo";
             this.cboTipo.Size = new System.Drawing.Size(300, 25);
             this.cboTipo.TabIndex = 10;
-            this.cboTipo.SelectedIndexChanged += new System.EventHandler(this.cboTipo_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Yu Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(55, 9);
+            this.label1.Location = new System.Drawing.Point(28, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(309, 38);
             this.label1.TabIndex = 11;
             this.label1.Text = "Registra tu Actividad";
             // 
-            // Lista
-            // 
-            this.Lista.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.Lista.FormattingEnabled = true;
-            this.Lista.Location = new System.Drawing.Point(291, 227);
-            this.Lista.Name = "Lista";
-            this.Lista.Size = new System.Drawing.Size(210, 160);
-            this.Lista.TabIndex = 12;
-            this.Lista.SelectedIndexChanged += new System.EventHandler(this.Lista_SelectedIndexChanged);
-            // 
-            // cmdCargarVector
-            // 
-            this.cmdCargarVector.Location = new System.Drawing.Point(383, 63);
-            this.cmdCargarVector.Name = "cmdCargarVector";
-            this.cmdCargarVector.Size = new System.Drawing.Size(118, 35);
-            this.cmdCargarVector.TabIndex = 13;
-            this.cmdCargarVector.Text = "Cargar Vector";
-            this.cmdCargarVector.UseVisualStyleBackColor = true;
-            this.cmdCargarVector.Click += new System.EventHandler(this.cmdCargarVector_Click);
-            // 
-            // cmdVerVector
-            // 
-            this.cmdVerVector.Location = new System.Drawing.Point(383, 104);
-            this.cmdVerVector.Name = "cmdVerVector";
-            this.cmdVerVector.Size = new System.Drawing.Size(118, 35);
-            this.cmdVerVector.TabIndex = 14;
-            this.cmdVerVector.Text = "Ver Vector";
-            this.cmdVerVector.UseVisualStyleBackColor = true;
-            this.cmdVerVector.Click += new System.EventHandler(this.cmdVerVector_Click);
-            // 
-            // cmdVerVector2
-            // 
-            this.cmdVerVector2.Location = new System.Drawing.Point(383, 145);
-            this.cmdVerVector2.Name = "cmdVerVector2";
-            this.cmdVerVector2.Size = new System.Drawing.Size(118, 35);
-            this.cmdVerVector2.TabIndex = 15;
-            this.cmdVerVector2.Text = "Ver vector Array";
-            this.cmdVerVector2.UseVisualStyleBackColor = true;
-            this.cmdVerVector2.Click += new System.EventHandler(this.cmdVerVector2_Click);
-            // 
-            // cmdVector3
-            // 
-            this.cmdVector3.Location = new System.Drawing.Point(383, 186);
-            this.cmdVector3.Name = "cmdVector3";
-            this.cmdVector3.Size = new System.Drawing.Size(118, 35);
-            this.cmdVector3.TabIndex = 16;
-            this.cmdVector3.Text = "Ver Vector for";
-            this.cmdVector3.UseVisualStyleBackColor = true;
-            this.cmdVector3.Click += new System.EventHandler(this.cmdVector3_Click);
-            // 
             // cmdMostrar
             // 
             this.cmdMostrar.Font = new System.Drawing.Font("Yu Gothic Medium", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdMostrar.Location = new System.Drawing.Point(230, 398);
+            this.cmdMostrar.Location = new System.Drawing.Point(243, 408);
             this.cmdMostrar.Name = "cmdMostrar";
             this.cmdMostrar.Size = new System.Drawing.Size(88, 31);
             this.cmdMostrar.TabIndex = 17;
@@ -325,17 +269,12 @@ namespace pryGestion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(531, 436);
+            this.ClientSize = new System.Drawing.Size(392, 458);
             this.Controls.Add(this.cmdMostrar);
-            this.Controls.Add(this.cmdVector3);
-            this.Controls.Add(this.cmdVerVector2);
-            this.Controls.Add(this.cmdVerVector);
-            this.Controls.Add(this.cmdCargarVector);
-            this.Controls.Add(this.Lista);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cboTipo);
             this.Controls.Add(this.txtDetalleActidad);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.cmdRegistrar);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.mrcTareas);
             this.Controls.Add(this.mrcReunion);
@@ -376,15 +315,11 @@ namespace pryGestion
         private System.Windows.Forms.CheckBox chkDebate;
         private System.Windows.Forms.CheckBox chkInvestigacion;
         private System.Windows.Forms.CheckBox chkRepositorio;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button cmdRegistrar;
         private System.Windows.Forms.TextBox txtDetalleActidad;
         private System.Windows.Forms.ComboBox cboTipo;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListBox Lista;
-        private System.Windows.Forms.Button cmdCargarVector;
-        private System.Windows.Forms.Button cmdVerVector;
-        private System.Windows.Forms.Button cmdVerVector2;
-        private System.Windows.Forms.Button cmdVector3;
         private System.Windows.Forms.Button cmdMostrar;
+        private EventHandler cboTipo_SelectedIndexChanged;
     }
 }

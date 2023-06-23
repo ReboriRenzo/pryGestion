@@ -12,7 +12,7 @@ namespace pryGestion
 {
     public partial class frmMostrar : Form
     {
-        public string[,] matrizTareas = new string[3, 5];
+        public string[,] matrizTareas = new string[5, 5];
         int indiceFila, indiceColumna;
         public frmMostrar()
         {
@@ -31,22 +31,18 @@ namespace pryGestion
 
             while (indiceFila < matrizTareas.GetLength(0))
             {
-                if (matrizTareas[indiceFila, indiceColumna] != null)
-                {
-                    dgvGrillaActividades.Rows.Add(indiceFila, indiceColumna);
-                }
-                indiceColumna++;
+                dgvGrillaActividades.Rows.Add(matrizTareas[indiceFila, 0],
+                    matrizTareas[indiceFila, 1],
+                    matrizTareas[indiceFila, 2],
+                    matrizTareas[indiceFila, 3],
+                    matrizTareas[indiceFila, 4]);
+
+                        
+
+                indiceFila++;
+
             }
-            indiceColumna++;
-
-            for (int i = 0; i < matrizTareas.GetLength(0); i++)
-                if (matrizTareas[i, 0] != null)
-                {
-                    dgvGrillaActividades.Rows.Add(matrizTareas[i, 0],
-                        matrizTareas[i, 1],
-                        matrizTareas[i, 2]);
-
-                }
         }
+
     }
 }

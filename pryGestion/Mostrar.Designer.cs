@@ -30,34 +30,71 @@
         {
             this.lblActividad = new System.Windows.Forms.Label();
             this.dgvGrillaActividades = new System.Windows.Forms.DataGridView();
+            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tareas = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Detalles = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Reunion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tarea = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrillaActividades)).BeginInit();
             this.SuspendLayout();
             // 
             // lblActividad
             // 
             this.lblActividad.AutoSize = true;
+            this.lblActividad.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblActividad.Font = new System.Drawing.Font("Yu Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblActividad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.lblActividad.Location = new System.Drawing.Point(12, 9);
+            this.lblActividad.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblActividad.Location = new System.Drawing.Point(176, 9);
             this.lblActividad.Name = "lblActividad";
-            this.lblActividad.Size = new System.Drawing.Size(226, 25);
+            this.lblActividad.Size = new System.Drawing.Size(228, 27);
             this.lblActividad.TabIndex = 1;
             this.lblActividad.Text = "Registro de Actividades";
             // 
             // dgvGrillaActividades
             // 
             this.dgvGrillaActividades.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvGrillaActividades.Location = new System.Drawing.Point(12, 37);
+            this.dgvGrillaActividades.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Fecha,
+            this.Tareas,
+            this.Detalles,
+            this.Reunion,
+            this.Tarea});
+            this.dgvGrillaActividades.Location = new System.Drawing.Point(12, 39);
             this.dgvGrillaActividades.Name = "dgvGrillaActividades";
-            this.dgvGrillaActividades.Size = new System.Drawing.Size(240, 150);
+            this.dgvGrillaActividades.Size = new System.Drawing.Size(546, 238);
             this.dgvGrillaActividades.TabIndex = 2;
             this.dgvGrillaActividades.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGrillaActividades_CellContentClick);
+            // 
+            // Fecha
+            // 
+            this.Fecha.HeaderText = "Fecha";
+            this.Fecha.Name = "Fecha";
+            // 
+            // Tareas
+            // 
+            this.Tareas.HeaderText = "Tipo de tarea";
+            this.Tareas.Name = "Tareas";
+            // 
+            // Detalles
+            // 
+            this.Detalles.HeaderText = "Detalles";
+            this.Detalles.Name = "Detalles";
+            // 
+            // Reunion
+            // 
+            this.Reunion.HeaderText = "Reunion";
+            this.Reunion.Name = "Reunion";
+            // 
+            // Tarea
+            // 
+            this.Tarea.HeaderText = "Tareas";
+            this.Tarea.Name = "Tarea";
             // 
             // frmMostrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(279, 200);
+            this.ClientSize = new System.Drawing.Size(570, 316);
             this.Controls.Add(this.dgvGrillaActividades);
             this.Controls.Add(this.lblActividad);
             this.Name = "frmMostrar";
@@ -72,5 +109,10 @@
         #endregion
         private System.Windows.Forms.Label lblActividad;
         private System.Windows.Forms.DataGridView dgvGrillaActividades;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tareas;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Detalles;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Reunion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tarea;
     }
 }
