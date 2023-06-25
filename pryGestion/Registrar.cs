@@ -14,9 +14,9 @@ namespace pryGestion
     {
         //Zona de declaracion global
         
-        string[] vectorActividad = new string[5];
-        string[] vectorRegistroActividad = new string[4];
+        
         readonly int indiceRegistro = 0;
+        frmInicioDeSesion ventanaInicioSesion = new frmInicioDeSesion();
         frmMostrar ventanaMostrar = new frmMostrar();
         int indiceFilaRegistro;
         public frmRegistrar()
@@ -36,7 +36,8 @@ namespace pryGestion
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            ventanaInicioSesion.ShowDialog();
+            this.Close();
         }
 
         private void lblFecha_Click(object sender, EventArgs e)
@@ -55,6 +56,8 @@ namespace pryGestion
         }
 
         private void button2_Click(object sender, EventArgs e)
+
+            //CARGA DE DATOS EN MATRIZ
         {
             string varTareas = "";
             string varReunion = "";
